@@ -38,10 +38,26 @@
 //Normalize
 //	- Vn = V / Mag
 
+//Dot Product
+//	- Dot = V1 * V2
+
+//Cross Product
+//	- Only for Vec3
+//		- V3 = V1 X V2
+//		- V3x = V1y*V2z - V1zV2y
+//		- V3y = V1z*V2x - V1xV2z
+//		- V3z = V1x*V2y - V1yV2x
+
 class Vector2
 {
 public:
 	float mX, mY;
+
+	Vector2()
+	{
+		mX = mY = 0;
+	}
+
 	Vector2(float x, float y)
 	{
 		mX = x;
@@ -72,12 +88,23 @@ public:
 	{
 		return Vector2(mX / Magnitude(), mY / Magnitude());
 	}
+
+	float Dot(Vector2 &other)
+	{
+		return (mX * other.mX) + (mY * other.mY);
+	}
 };
 
 class Vector3
 {
 public:
 	float mX, mY, mZ;
+
+	Vector3()
+	{
+		mX = mY = mZ = 0;
+	}
+
 	Vector3(float x, float y, float z)
 	{
 		mX = x;
@@ -108,6 +135,19 @@ public:
 	Vector3 Normalize()
 	{
 		return Vector3(mX / Magnitude(), mY / Magnitude(), mZ / Magnitude());
+	}
+
+	float Dot(Vector3 &other)
+	{
+		return (mX * other.mX) + (mY * other.mY) + (mZ * other.mZ);
+	}
+
+	Vector3 Cross(Vector3 &other)
+	{
+		Vector3 newVec = Vector3();
+		newVec.mX = (mY * other.mZ) - (mZ * other.mY);
+		newVec.mY = (mZ * other.mX) - (mX * other.mZ);
+		newVec.mZ = (mX * other.mY) - (mY * other.mX);
 	}
 };
 
@@ -147,5 +187,10 @@ public:
 	{
 		return Vector4(mX / Magnitude(), mY / Magnitude(), mZ / Magnitude(), 
 			mW / Magnitude());
+	}
+
+	float Dot(Vector4 &other)
+	{
+		return (mX * other.mX) + (mY * other.mY) + (mZ * other.mZ) + (mW * other.mZ);
 	}
 };
