@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Binary", "Binary\Binary.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vectors", "Vectors\Vectors.vcxproj", "{FDA364BF-C1ED-4816-8A90-54E9A456FFCD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Matrices", "Matrices\Matrices.vcxproj", "{5230C6AD-E7F2-446D-B019-8A955052C9B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{FDA364BF-C1ED-4816-8A90-54E9A456FFCD}.Release|x64.Build.0 = Release|x64
 		{FDA364BF-C1ED-4816-8A90-54E9A456FFCD}.Release|x86.ActiveCfg = Release|Win32
 		{FDA364BF-C1ED-4816-8A90-54E9A456FFCD}.Release|x86.Build.0 = Release|Win32
+		{5230C6AD-E7F2-446D-B019-8A955052C9B6}.Debug|x64.ActiveCfg = Debug|x64
+		{5230C6AD-E7F2-446D-B019-8A955052C9B6}.Debug|x64.Build.0 = Debug|x64
+		{5230C6AD-E7F2-446D-B019-8A955052C9B6}.Debug|x86.ActiveCfg = Debug|Win32
+		{5230C6AD-E7F2-446D-B019-8A955052C9B6}.Debug|x86.Build.0 = Debug|Win32
+		{5230C6AD-E7F2-446D-B019-8A955052C9B6}.Release|x64.ActiveCfg = Release|x64
+		{5230C6AD-E7F2-446D-B019-8A955052C9B6}.Release|x64.Build.0 = Release|x64
+		{5230C6AD-E7F2-446D-B019-8A955052C9B6}.Release|x86.ActiveCfg = Release|Win32
+		{5230C6AD-E7F2-446D-B019-8A955052C9B6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
