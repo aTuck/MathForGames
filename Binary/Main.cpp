@@ -170,10 +170,12 @@ int BitshiftRight(int val, int shift)
 }
 void main()
 {
-	int a = BitwiseAND(16, 25); //4
-	int b = BitwiseOR(5, 10); //7
-	int c = BitwiseNOT(6); //-7
-	int d = BitwiseXOR(5, 6); //
-	int e = BitshiftLeft(5, 2);
+	int a = 5 & 6;
+	int b = 10 & 15;
+	int c = 1 | 2;
+	int d = ~256;
+	int e = 10 ^ 5;
+	int f = 10 << 3;
+	int g = 5 >> 1;
 	system("pause");
 }
