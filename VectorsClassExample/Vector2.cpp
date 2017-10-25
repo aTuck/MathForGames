@@ -34,4 +34,5 @@ Vector2 Vector2::Normalise()
 float Vector2::Magnitude()
 {
 	float mag = sqrt((mX * mX) + (mY * mY));
+	return mag;
 }

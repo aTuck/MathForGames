@@ -35,4 +35,5 @@ Vector3 Vector3::Normalise()
 float Vector3::Magnitude()
 {
 	float mag = sqrt((mX * mX) + (mY * mY) + (mZ * mZ));
+	return mag;
 }
