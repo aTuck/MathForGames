@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Matrices", "Matrices\Matric
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VectorsClassExample", "VectorsClassExample\VectorsClassExample.vcxproj", "{8CE2AD83-B2AD-4B63-8BFA-3D7C57ADA6F9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Gist1", "Gist1\Gist1.vcxproj", "{C02D6828-23F6-4418-AF23-42197CDD7BE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{8CE2AD83-B2AD-4B63-8BFA-3D7C57ADA6F9}.Release|x64.Build.0 = Release|x64
 		{8CE2AD83-B2AD-4B63-8BFA-3D7C57ADA6F9}.Release|x86.ActiveCfg = Release|Win32
 		{8CE2AD83-B2AD-4B63-8BFA-3D7C57ADA6F9}.Release|x86.Build.0 = Release|Win32
+		{C02D6828-23F6-4418-AF23-42197CDD7BE5}.Debug|x64.ActiveCfg = Debug|x64
+		{C02D6828-23F6-4418-AF23-42197CDD7BE5}.Debug|x64.Build.0 = Debug|x64
+		{C02D6828-23F6-4418-AF23-42197CDD7BE5}.Debug|x86.ActiveCfg = Debug|Win32
+		{C02D6828-23F6-4418-AF23-42197CDD7BE5}.Debug|x86.Build.0 = Debug|Win32
+		{C02D6828-23F6-4418-AF23-42197CDD7BE5}.Release|x64.ActiveCfg = Release|x64
+		{C02D6828-23F6-4418-AF23-42197CDD7BE5}.Release|x64.Build.0 = Release|x64
+		{C02D6828-23F6-4418-AF23-42197CDD7BE5}.Release|x86.ActiveCfg = Release|Win32
+		{C02D6828-23F6-4418-AF23-42197CDD7BE5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
