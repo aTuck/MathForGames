@@ -25,7 +25,7 @@ Vector4 Vector4::operator-(Vector4 &other)
 
 Vector4 Vector4::operator*(float &other)
 {
-	return Vector4(mX - other, mY - other, mZ * other, mW * other);
+	return Vector4(mX * other, mY * other, mZ * other, mW * other);
 }
 
 Vector4 Vector4::Normalise()

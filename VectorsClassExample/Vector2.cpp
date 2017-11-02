@@ -23,7 +23,7 @@ Vector2 Vector2::operator-(Vector2 &other)
 
 Vector2 Vector2::operator*(float &other)
 {
-	return Vector2(mX - other, mY - other);
+	return Vector2(mX * other, mY * other);
 }
 
 Vector2 Vector2::Normalise()
