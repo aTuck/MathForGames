@@ -117,7 +117,32 @@ int LargestValue(int *arr, int len)
 	return largest;
 }
 
+bool PasswordCreation(char *password)
+{
+	int i = 0;
+	while(password[i] != '\0')
+	{
+		i++;
+	}
 
+	bool containsSpecial = false;
+	bool containsCapital = false;
+	bool containsNumber = false;
+	bool containsSpace = false;
+	for(int j = 0; j < i; j++)
+	{
+		if (password[j] >= 33 && password[j] <= 47 || password[j] >= 58 && password[j] <= 64 ||
+			password[j] >= 91 && password[j] <= 96 || password[j] >= 123 && password[j] <= 126)
+			containsSpecial = true;
+		if (password[j] >= 65 && password[j] <= 90)
+			containsCapital = true;
+		if (password[j] >= 48 && password[j] <= 57)
+			containsNumber = true;
+		if (password[j] == 32)
+			containsSpace = true;
+	}
+	return (containsSpecial && containsCapital && containsNumber && !containsSpace) ? true : false;
+}
 
 int main()
 {
@@ -152,6 +177,8 @@ int main()
 
 	int b[5] = { 0,-1,-2,2,-5 };
 	int large = LargestValue(b, 5);
+
+	bool test = PasswordCreation("p@55W0r!)");
 
 	system("pause");
 }
