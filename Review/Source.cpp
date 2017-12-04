@@ -120,28 +120,24 @@ int LargestValue(int *arr, int len)
 bool PasswordCreation(char *password)
 {
 	int i = 0;
-	while(password[i] != '\0')
-	{
-		i++;
-	}
-
 	bool containsSpecial = false;
 	bool containsCapital = false;
 	bool containsNumber = false;
 	bool containsSpace = false;
-	for(int j = 0; j < i; j++)
-	{
-		if (password[j] >= 33 && password[j] <= 47 || password[j] >= 58 && password[j] <= 64 ||
-			password[j] >= 91 && password[j] <= 96 || password[j] >= 123 && password[j] <= 126)
+	while(password[i] != '\0')
+	{		
+		if (password[i] >= 33 && password[i] <= 47 || password[i] >= 58 && password[i] <= 64 ||
+			password[i] >= 91 && password[i] <= 96 || password[i] >= 123 && password[i] <= 126)
 			containsSpecial = true;
-		if (password[j] >= 65 && password[j] <= 90)
+		if (password[i] >= 65 && password[i] <= 90)
 			containsCapital = true;
-		if (password[j] >= 48 && password[j] <= 57)
+		if (password[i] >= 48 && password[i] <= 57)
 			containsNumber = true;
-		if (password[j] == 32)
-			containsSpace = true;
+		if (password[i] == 32)
+			return false;
+		i++;
 	}
-	return (containsSpecial && containsCapital && containsNumber && !containsSpace) ? true : false;
+	return containsSpecial && containsCapital && containsNumber;
 }
 
 int main()
